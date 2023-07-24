@@ -20,7 +20,6 @@ h1,h2,h3{
     color: var(--color-headings);
     margin-bottom: 1rem;
 }
-
 h1{
     font-size: 7rem;
 }
@@ -34,7 +33,6 @@ p{
     /*lets h3 margin be the decider*/
     margin-top: 0;
 }
-
 @media screen and (min-width: 1024px){
     body{
         font-size: 1.8rem;
@@ -68,9 +66,34 @@ a{
 .link-arrow:hover::after{
     margin-left: 10px;
 }
-
 @media screen and (min-width: 1024px){
     .link-arrow{
         font-size: 1.5rem;
+    }
+}
+
+/*Badges*/
+.badge{
+    border-radius: 20px;
+    padding: 0.5rem 2rem;
+    font-weight: 600;
+    white-space: nowrap;
+    font-size: 2rem;
+}
+
+.badge--primary{
+    background: var(--color-primary);
+    color: #fff;
+}
+.badge--secondary{
+    background: var(--color-secondary);
+    color: #fff;
+}
+.badge--small{
+    font-size: 1.6rem;
+}
+@media screen and (min-width:1024px){
+    .badge{
+        font-size: 1.2rem;
     }
 }
