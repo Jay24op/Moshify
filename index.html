@@ -3,7 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta
+      name="description"
+      content="Deploy your websites in less than 60 seconds!"
+    />
+    <meta property="og:title" content="Moshify..." />
+    <meta property="og:description" content="Moshify..." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://" />
+    <meta property="og:url" content="https://moshified.com" />
+    <title>Moshifyy - Go Online for Just $10</title>
     <!-- css -->
     <link rel="stylesheet" href="/CSS/normalize.css" />
     <link rel="stylesheet" href="/CSS/styles.css" />
@@ -19,7 +28,9 @@
   <body>
     <header>
       <nav class="nav collapsible">
-        <a class="nav__brand" href="/"><img src="images/logo.svg" /></a>
+        <a class="nav__brand" href="/"
+          ><img src="images/logo.svg" alt="logo"
+        /></a>
         <svg class="icon icon--white nav__toggler">
           <use xlink:href="images/sprite.svg#menu"></use>
         </svg>
@@ -92,7 +103,7 @@
       </ul>
     </section>
 
-    <section class="block container block-plans">
+    <div class="block container block-plans">
       <div class="grid grid--1x3" data-aos="fade-up">
         <section class="plan">
           <div class="card card--secondary">
@@ -157,7 +168,7 @@
           </div>
         </section>
       </div>
-    </section>
+    </div>
 
     <section class="block container">
       <header class="block__header">
@@ -292,10 +303,6 @@
             type="image/webp"
             srcset="images/ipad.webp 1x, images/ipad@2x.webp"
           />
-          <source
-            type="image/png"
-            srcset="images/ipad.png 1x, images/ipad@2x.png"
-          />
           <img src="images/ipad.png" alt="" />
         </picture>
 
@@ -427,12 +434,12 @@
       <div class="container footer__sections grid">
         <!-- products -->
         <section class="collapsible footer__section">
-          <header class="collapsible__header">
+          <div class="collapsible__header">
             <h2 class="collapsible__heading footer__heading">products</h2>
             <svg class="icon icon--white collapsible__chevron">
               <use xlink:href="images/sprite.svg#chevron"></use>
             </svg>
-          </header>
+          </div>
           <div class="collapsible__content">
             <ul class="list">
               <li>
@@ -452,12 +459,12 @@
         </section>
         <!-- company -->
         <section class="collapsible footer__section">
-          <header class="collapsible__header">
+          <div class="collapsible__header">
             <h2 class="collapsible__heading footer__heading">company</h2>
             <svg class="icon icon--white collapsible__chevron">
               <use xlink:href="images/sprite.svg#chevron"></use>
             </svg>
-          </header>
+          </div>
           <div class="collapsible__content">
             <ul class="list">
               <li>
@@ -474,12 +481,12 @@
         </section>
         <!-- support -->
         <section class="collapsible footer__section">
-          <header class="collapsible__header">
+          <div class="collapsible__header">
             <h2 class="collapsible__heading footer__heading">support</h2>
             <svg class="icon icon--white collapsible__chevron">
               <use xlink:href="images/sprite.svg#chevron"></use>
             </svg>
-          </header>
+          </div>
           <div class="collapsible__content">
             <ul class="list">
               <li>
@@ -496,12 +503,12 @@
         </section>
         <!-- domains -->
         <section class="collapsible footer__section">
-          <header class="collapsible__header">
+          <div class="collapsible__header">
             <h2 class="collapsible__heading footer__heading">domains</h2>
             <svg class="icon icon--white collapsible__chevron">
               <use xlink:href="images/sprite.svg#chevron"></use>
             </svg>
-          </header>
+          </div>
           <div class="collapsible__content">
             <ul class="list">
               <li>
@@ -517,10 +524,10 @@
           </div>
         </section>
         <!-- logo -->
-        <section class="footer__brand">
+        <div class="footer__brand">
           <img src="/images/logo.svg" alt="" />
           <p class="footer__copyright">&copy; Copyright 2023 Jason Edwards</p>
-        </section>
+        </div>
       </div>
     </footer>
 
